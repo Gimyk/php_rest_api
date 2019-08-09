@@ -1,0 +1,6 @@
+Header set Access-Control-Allow-Origin "*"
+Header set Content-Type "application/json"
+Header set Access-Control-Allow-Headers "*"
+RewriteEngine On
+RewriteBase /api/
+RewriteRule ^/?id/([^/d]+)/?$ index.php?id=$1 [L,QSA]
